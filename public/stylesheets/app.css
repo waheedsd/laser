@@ -28,17 +28,23 @@ li{
 	background-color: #47a99c;
 	border:none;
 }
-/* .active{
-	background:#47a99c;
-	color:#fff;
-	border-radius:2px;
-	padding:0px;	
-} */
+
+
+@media (max-width:768px){
+	.nav-item{
+		border-bottom:1px solid #47a99c;
+		color:#000;
+		font-weight: bold;
+		transition:all linear 12s;
+	}
+}
 .navbar-nav ul li{
 	float:right;
 }
-.nav-link{
+
+a .nav-link{
 	padding:1px;
+	color:#47a99c;
 }
 .bg-clr{
 	background-color: #47a99c;
@@ -47,8 +53,8 @@ li{
 .navbar-light .navbar-nav .nav-link {
 	color: #47a99c;
 	margin:5px;
-	/* text-align: center; */
 	border-radius: 5px;
+	padding-left:20px;
 }
 a {
 	color: #00B7FF;
@@ -56,7 +62,11 @@ a {
 .navbar-light .navbar-nav .nav-link:hover {
 	
 	background-color: #47a99c;
-	color: #fff;
+	color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-weight: bold;
+    color: #47a99c !important;
 }
 a .nav-link{
 	list-style: none;
@@ -78,7 +88,8 @@ a .nav-link{
 	padding:4px 7px;
 	border-radius:7px;
 	border-right:4px solid #00c000;
-	box-shadow: 0px 2px 7px -4px #000
+	box-shadow: 0px 2px 7px -4px #000;
+	transition:all  2s;
 }
 .yellow{
 	margin:0px;
@@ -92,17 +103,18 @@ a .nav-link{
 	max-height: 73px;
 	padding:4px 7px;
 	border-right:4px solid #f3cf00;
-	box-shadow: 0px 2px 7px -4px #000
+	box-shadow: 0px 2px 7px -4px #000;
+	transition:all  1.5s;
 }
 .green:hover{
 	box-shadow:none;
 	cursor: pointer;
-	transition:all linear 0.1s;
+	font-size:12px;
 }
 .yellow:hover{
 	box-shadow:none;
 	cursor: pointer;
-	transition:all linear 0.1s;
+	font-size:12px;
 }
 .form-c{
 	margin:20px auto;
@@ -118,3 +130,6 @@ label{
 .topnav-right{
 	float:right!important;
 }
+/* =======datepicker==== */
+#datepicker{width:auto; margin: 0px 10px;}
+#datepicker > span:hover{cursor: pointer;}
