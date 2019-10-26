@@ -1,7 +1,7 @@
 
 var details = [];
 function showDetails(details){
-	var ul =$("<ul></ul>");
+	var ul =$("<p></p>");
 	var li1 = $("<li></li>").html(details.slno);
 	ul.append(li1);
 	var li2 = $("<li></li>").html(details.type);
@@ -16,7 +16,7 @@ function showDetails(details){
 	}
 	$(".122").append(ul);
 
-	var ul1 =$("<ul></ul>");
+	var ul1 =$("<p></p>");
 	var li1 = $("<li></li>").html(details.slno);
 	ul1.append(li1);
 	var li2 = $("<li></li>").html(details.type);
@@ -32,7 +32,7 @@ function showDetails(details){
 	$(".133").append(ul1);
 	
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -47,7 +47,7 @@ function showDetails(details){
 	}
 	$(".729").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -64,7 +64,7 @@ function showDetails(details){
 
 	
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -79,7 +79,7 @@ function showDetails(details){
 	}
 	$(".222").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -94,7 +94,7 @@ function showDetails(details){
 	}
 	$(".322").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -109,7 +109,7 @@ function showDetails(details){
 	}
 	$(".422").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -124,7 +124,7 @@ function showDetails(details){
 	}
 	$(".533").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -139,7 +139,7 @@ function showDetails(details){
 	}
 	$(".534").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -155,7 +155,7 @@ function showDetails(details){
 	$(".633").append(ul2);
 
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -170,7 +170,7 @@ function showDetails(details){
 	}
 	$(".722").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -186,7 +186,7 @@ function showDetails(details){
 	$(".733").append(ul2);
 
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
@@ -201,7 +201,7 @@ function showDetails(details){
 	}
 	$(".822").append(ul2);
 
-	var ul2 =$("<ul></ul>");
+	var ul2 =$("<p></p>");
 	var li4 = $("<li></li>").html(details.slno);
 	ul2.append(li4);
 	var li5 = $("<li></li>").html(details.type);
