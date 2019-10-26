@@ -40,7 +40,7 @@ body{
 .navbar-light .navbar-nav .nav-link {
 	color: #47a99c;
 	margin:5px;
-	text-align: center;
+	/* text-align: center; */
 	border-radius: 5px;
 }
 a {
