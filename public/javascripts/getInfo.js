@@ -1,3 +1,4 @@
+
 var details = [];
 function showDetails(details){
 	var ul =$("<ul></ul>");
@@ -220,8 +221,9 @@ function showDetails(details){
 
 
 $(document).ready(function(){
+	console.log(details);
 		$.ajax({
-			url : "http://localhost:3000/laserapp",
+			url : "/laserapp",
 			method : 'GET',
 			dataType : 'JSON',
 			success:function(res){
@@ -247,14 +249,12 @@ $(document).ready(function(){
 					$("#fabrication").show();
 
 				}
-
 				}
 				for( var temp in details){
 						showDetails(details[temp]);
+						console.log(details[temp]);
 						return;
 				}
-
-				
 			},
 			error:function(err){
 				console.log("Data not Found");

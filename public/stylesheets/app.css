@@ -5,10 +5,10 @@ body{
 .logo{
     width: 200px;
 }
-.table .thead-dark th{
+.table th{
 	text-transform: capitalize !important;
-	font-size: 12px;
-	font-weight: 500;
+	font-size: 13px;
+	font-weight: blod;
 }				
 .notification{
 	padding:12px;
@@ -36,6 +36,10 @@ body{
 }
 .nav-link{
 	padding:1px;
+}
+.bg-clr{
+	background-color: #47a99c;
+	color: #fff;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #47a99c;
