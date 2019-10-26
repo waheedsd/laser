@@ -1,0 +1,87 @@
+  <html>
+    <head>
+        <title>Task Manager</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="javascripts/setData.js"></script>
+        <script type="text/javascript" src="javascripts/getInfo.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" src="data.json"></script> -->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-co
+              ntrols="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><button class="btn btn-success btn-sm">Home </button><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary btn-sm">Slot Planing</button></a>
+                </li>.
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <button class="btn btn-primary btn-sm">Pending Action</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <button class="btn btn-primary btn-sm">Manage User</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><button class="btn btn-primary btn-sm">Change Password</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <button class="btn btn-primary btn-sm">Sign out </button></a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+          <section>
+            <div class="container">  
+              <div class="form-c">
+                  <form method="POST"> 
+                      <div class="form-group  row">
+                        <label for="materialNum" class="col-sm-2 col-form-label">
+                            Material Number</label>
+                        <div class="col-sm-10 col-8">
+                          <input type="text"  class="form-control" id="materialNum" placeholder="Material Number" required>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="materialType" class="col-sm-2 col-form-label">Material Type</label>
+                        <div class="col-sm-10 col-8">
+                          <input type="text" class="form-control" id="materialType" placeholder="Material Type" required>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="select" class="col-sm-2 col-form-label">Material Type</label>
+                          <div class="col-sm-10 col-8">
+                              <select class="form-control" id="select">
+                                <option value="Forming">--select--</option>
+                                  <option value="Laser Cut &amp; Fabrication Kit">Laser Cut &amp; Fabrication Kit</option>
+                                  <option value="Forming">Forming</option>
+                                  <option value="Fabrication">Fabrication</option>
+                                  <option value="Assembly Kit">Assembly Kit</option>
+                                  <option value="Surface Treatment &amp; Coating">Surface Treatment &amp; Coating</option>
+                                  <option value="Assembly">Assembly</option>
+                                  <option value="PIN">PIN</option>
+                                </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10 col-8">
+                                <button type="button" class="btn btn-dark btn-lg btn-block" id="checkout" onclick="setValue()" >Checkout</button>
+                            </div>
+                          </div>
+                    </form>
+              </div>
+            </div>
+          </section>
+    </body>
+</html>
