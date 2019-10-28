@@ -215,46 +215,19 @@ function showDetails(details){
 		ul2.attr("class" ,"yellow");	
 	}
 	$(".922").append(ul2);
-
-
 	}
-
-
 $(document).ready(function(){
-	console.log(details);
 		$.ajax({
 			url : "/laserapp",
 			method : 'GET',
 			dataType : 'JSON',
 			success:function(res){
 				details = res.laserDetails;
-				var details1 = details[1];
-				for(var temp in details1){
-					if(details1.superVisorId === '1'){
-					$("td").hide();
-					$(".laser-cut").show();
-					$(".all").hide();
-					$("#laser-cut").show();
-				}
-				if(details1.superVisorId === '2'){
-					$("td").hide();
-					$(".all").hide();
-					$(".forming").show();
-					$("#forming").show();
-				}
-				if(details1.superVisorId === '3'){
-					$("td").hide();
-					$(".all").hide();
-					$(".fabrication").show();
-					$("#fabrication").show();
-
-				}
-				}
 				for( var temp in details){
 						showDetails(details[temp]);
-						console.log(details[temp]);
 						return;
 				}
+				console.log(res);
 			},
 			error:function(err){
 				console.log("Data not Found");

@@ -51,7 +51,7 @@ a .nav-link{
 	color: #fff;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #47a99c;
+	/* color: #47a99c; */
 	margin:5px;
 	border-radius: 5px;
 	padding-left:20px;
@@ -66,16 +66,16 @@ a {
 }
 .navbar-light .navbar-nav .nav-link {
 	font-weight: bold;
-    color: #47a99c !important;
+    color: #47a99c;
 }
-a .nav-link{
+/* a .nav-link{
 	list-style: none;
 	text-align: left;
 	font-size: 16px;
 	color:#47a99c;
 	margin: 0px;
     padding: 8px;
-}
+} */
 .green{
 	margin:0px;
 	justify-content:center;
@@ -89,7 +89,7 @@ a .nav-link{
 	border-radius:7px;
 	border-right:4px solid #00c000;
 	box-shadow: 0px 2px 7px -4px #000;
-	transition:all  2s;
+	transition:all  0.3s;
 }
 .yellow{
 	margin:0px;
@@ -104,7 +104,7 @@ a .nav-link{
 	padding:4px 7px;
 	border-right:4px solid #f3cf00;
 	box-shadow: 0px 2px 7px -4px #000;
-	transition:all  1.5s;
+	transition:all  0.3s;
 }
 .green:hover{
 	box-shadow:none;
@@ -131,5 +131,66 @@ label{
 	float:right!important;
 }
 /* =======datepicker==== */
-#datepicker{width:auto; margin: 0px 10px;}
+#datepicker{width:auto; margin: 0px 10px; padding:11px 20px;}
 #datepicker > span:hover{cursor: pointer;}
+.datepicker.dropdown-menu{padding:11px 22px;}
+input[type=text]{
+	border-radius:10px;
+	background-color:#47a99c !important;
+	color:#fff;
+	font-weight:bold;	
+  }
+  .active{
+	/* border-radius:5px; */
+	border-bottom:3px solid #47a99c;
+	color: #fff !important;
+	margin:0px;
+  }
+  /* ===========wip============= */
+  .right{
+	 	 position: absolute;
+		right: 7%;
+		top: -7px
+  }
+  .wipHeading{
+	  background-color:#6fd2f0;
+	  padding:0px 7px !important;
+	  font-weight:bold;
+	  border-radius: 7px;
+	  font-size:12px;
+  }
+  .wip-section{
+	  margin:25px 0px;
+	  position: relative;
+  }
+  table .border-0 td{
+	  border:none;
+	  font-size:12px !important;
+	  font-weight:bold;
+	  color:#007092;
+  }
+  	table .wip td p li{
+	border:none;
+	font-size:12px !important;
+	font-weight:bold;
+	}
+	table .wip td p{
+		margin-bottom:0px;
+	}
+	table .wip td{
+		/* border:1px solid #000; */
+		background-color: #a7dcd9;
+		color:rgb(0, 6, 8) !important;
+		padding:3px;
+
+	}
+	.arrow{
+		position: absolute;
+	}
+	.arrow img{
+		width:70%;
+	}
+	.left{
+		top:100px;
+		left:120px;
+	}

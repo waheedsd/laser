@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/jquery-ui.min.js"></script>
+    <script src="./javascripts/wipdata.js"></script>
+    <link rel="stylesheet" href="./javascripts/jquery-ui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <title>Buhler</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/wip.html">WIP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pending Actions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Management User</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-key" aria-hidden="true"></i> Change Password</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+              </li>	
+          </ul>
+                <!-- <input class="datepicker" data-date-format="mm/dd/yyyy"> -->
+                <div id="datepicker" class="input-group date" data-date-format="d M, yyyy">
+                        <input class="form-control" type="text" readonly />
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+        </div>
+      </nav>
+      <section class="wip-section">
+          <div class="container">
+          <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td class="right wipHeading">Sheet Metal</td>
+                    </tr>
+                    <tr class="border-0 wipStep">
+                        <td>Step 11</td>
+                        <td>Step 10</td>
+                        <td>Step 9</td>
+                        <td>Step 8</td>
+                        <td>Step 7</td>
+                        <td>Step 6</td>
+                        <td>Step 5</td>
+                        <td>Step 4</td>
+                        <td>Step 3</td>
+                        <td>Step 2</td>
+                        <td>Step 1</td>
+                    </tr>
+                     <tr class="wip">
+                    </tr> 
+                    <div class="arrow left"><img src="./images/arrow1.png" alt=""></div>
+                    <tr>
+                      <td class="right wipHeading">Sheet Metal</td>
+                  </tr>
+                  <tr class="border-0 wipStep">
+                      <td>Step 11</td>
+                      <td>Step 10</td>
+                      <td>Step 9</td>
+                      <td>Step 8</td>
+                      <td>Step 7</td>
+                      <td>Step 6</td>
+                      <td>Step 5</td>
+                      <td>Step 4</td>
+                      <td>Step 3</td>
+                      <td>Step 2</td>
+                      <td>Step 1</td>
+                  </tr>
+                   <tr class="wip">
+                  </tr> 
+                  <div class="arrow left"><img src="./images/arrow1.png" alt=""></div>
+                </table>
+          </div>
+        </div>
+      </section>
+      <script>
+        // $('#datepicker').datepicker();
+        $(function () {
+        $("#datepicker").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+        }).datepicker('update', new Date());
+        });
+  </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.js"></script>
+	<script type="text/javascript" src="javascripts/getInfo.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+      </body>
+    </html>

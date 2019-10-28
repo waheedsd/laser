@@ -34,7 +34,8 @@ router.get('/', function(req, res, next) {
         
     }
    
-	]}
+	]
+}
 	res.send(JSON.stringify(data));
 });
 
