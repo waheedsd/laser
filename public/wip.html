@@ -53,49 +53,106 @@
         </div>
       </nav>
       <section class="wip-section">
-          <div class="container">
-          <div class="table-responsive">
-                <table class="table">
-                    <tr>
-                        <td class="right wipHeading">Sheet Metal</td>
-                    </tr>
-                    <tr class="border-0 wipStep">
-                        <td>Step 11</td>
-                        <td>Step 10</td>
-                        <td>Step 9</td>
-                        <td>Step 8</td>
-                        <td>Step 7</td>
-                        <td>Step 6</td>
-                        <td>Step 5</td>
-                        <td>Step 4</td>
-                        <td>Step 3</td>
-                        <td>Step 2</td>
-                        <td>Step 1</td>
-                    </tr>
-                     <tr class="wip">
-                    </tr> 
-                    <div class="arrow left"><img src="./images/arrow1.png" alt=""></div>
-                    <tr>
-                      <td class="right wipHeading">Sheet Metal</td>
-                  </tr>
-                  <tr class="border-0 wipStep">
-                      <td>Step 11</td>
-                      <td>Step 10</td>
-                      <td>Step 9</td>
-                      <td>Step 8</td>
-                      <td>Step 7</td>
-                      <td>Step 6</td>
-                      <td>Step 5</td>
-                      <td>Step 4</td>
-                      <td>Step 3</td>
-                      <td>Step 2</td>
-                      <td>Step 1</td>
-                  </tr>
-                   <tr class="wip">
-                  </tr> 
-                  <div class="arrow left"><img src="./images/arrow1.png" alt=""></div>
-                </table>
-          </div>
+          <div class="container-fluid">
+          
+            <div class="row">
+              <div class="col-md-1">
+                  <!-- <div class="arrow left"><img src="./images/arwright.png" alt=""></div> -->
+              </div>
+              <div class="col-md-10">
+                  <div class="table ">
+                  <table class="table ">
+                      <tr>
+                          <td class="right heading wipHeading">Sheet Metal</td>
+                      </tr>
+                      <tr class="border-0 wipStep">
+                          <td>Step 11</td>
+                          <td>Step 10</td>
+                          <td>Step 9</td>
+                          <td>Step 8</td>
+                          <td>Step 7</td>
+                          <td>Step 6</td>
+                          <td>Step 5</td>
+                          <td>Step 4</td>
+                          <td>Step 3</td>
+                          <td>Step 2</td>
+                          <td>Step 1</td>
+                      </tr>
+                       <tr class="wip smTable">
+                      </tr> 
+                    
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-1">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="arrow left"><img src="./images/arwright.png" alt=""></div>
+                </div>
+                <div class="col-md-10">
+                    <div class="table">
+                    <table class="table ">
+                        <tr>
+                            <td class="left heading fabrication">Fabricaion</td>
+                        </tr>
+                        <tr class="border-0 fabStep">
+                            <td>Step 12</td>
+                            <td>Step 13</td>
+                            <td>Step 14</td>
+                            <td>Step 15</td>
+                            <td>Step 16</td>
+                            <td>Step 17</td>
+                            <td>Step 18</td>
+                            <td>Step 19</td>
+                            <td>Step 20</td>
+                            <td>Step 21</td>
+                            <td>Step 22</td>
+                            <td>Step 23</td>
+                        </tr>
+                         <tr class="wip fabTable">
+                        </tr> 
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                    <!-- <div class="arrow left"><img src="./images/arwright.png" alt=""></div> -->
+                </div>
+                <div class="col-md-10">
+                    <div class="table ">
+                    <table class="table ">
+                        <tr>
+                            <td class="right heading surface">Surface Treatmeny</td>
+                        </tr>
+                        <tr class="border-0 stStep">
+                            <td>Step 12</td>
+                            <td>Step 13</td>
+                            <td>Step 14</td>
+                            <td>Step 15</td>
+                            <td>Step 16</td>
+                            <td>Step 17</td>
+                            <td>Step 18</td>
+                            <td>Step 19</td>
+                            <td>Step 20</td>
+                            <td>Step 21</td>
+                            <td>Step 22</td>
+                            <td>Step 23</td>
+                        </tr>
+                         <tr class="wip stTable">
+                        </tr> 
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="arrow left"><img src="./images/arwleft.png" alt=""></div>
+                </div>
+              </div>
+          
         </div>
       </section>
       <script>
@@ -106,6 +163,9 @@
                 todayHighlight: true
         }).datepicker('update', new Date());
         });
+        $(dosument).ready(function(){
+          $(".table").attr("class","tableresponsive");
+        })
   </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.js"></script>

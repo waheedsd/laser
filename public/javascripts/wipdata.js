@@ -10,9 +10,9 @@ function wip(data){
                     var p = $("<p></p>");
                     td.append(p);
                     p.append(li1);
-                    var li1 = $("<li></li>").html(tdata.id );
+                    var li1 = $("<li></li>");
                     p.append(li2);
-                    var li2 = $("<li></li>").html(tdata.type );
+                    var li2 = $("<li></li>");
                     wipclass.append(td);
                 console.log(tdata[i]);
               }

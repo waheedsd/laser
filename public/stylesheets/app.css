@@ -148,16 +148,32 @@ input[type=text]{
   }
   /* ===========wip============= */
   .right{
-	 	 position: absolute;
-		right: 7%;
-		top: -7px
+	 	position: absolute;
+		top: -7px;
+		right:0px;
+  }
+  .left{
+	  position: absolute;
+	  left:0px;
+	  top:-7px;
+  }
+  .heading{
+	padding:0px 7px !important;
+	font-weight:bold;
+	border-radius: 7px;
+	font-size:12px;
   }
   .wipHeading{
-	  background-color:#6fd2f0;
-	  padding:0px 7px !important;
-	  font-weight:bold;
-	  border-radius: 7px;
-	  font-size:12px;
+	  background-color:#008000;
+	  color:#fff;
+  }
+  .fabrication{
+	background-color:#FF0000;
+	color:#fff;
+  }
+  .surface{
+	  background-color: #92007f;
+	  color:#fff;
   }
   .wip-section{
 	  margin:25px 0px;
@@ -167,8 +183,14 @@ input[type=text]{
 	  border:none;
 	  font-size:12px !important;
 	  font-weight:bold;
-	  color:#007092;
+	  color:#008000;
   }
+  table .fabStep td{
+	  color:#FF0000;
+  }
+  table .stStep td{
+	color:#92007f;
+}
   	table .wip td p li{
 	border:none;
 	font-size:12px !important;
@@ -178,19 +200,34 @@ input[type=text]{
 		margin-bottom:0px;
 	}
 	table .wip td{
-		/* border:1px solid #000; */
-		background-color: #a7dcd9;
 		color:rgb(0, 6, 8) !important;
 		padding:3px;
-
+		height:50px;
+	}
+	table .smTable td{
+	  border:1px solid #008000;
+		background-color: #a7dcd9;
+	}
+	table .fabTable td{
+		border:1px solid #FF0000;
+		background-color: #a7dcd9;
+	}
+	table .stTable td{
+		border:1px solid #92007f;
+		background-color: #a7dcd9;
 	}
 	.arrow{
 		position: absolute;
 	}
 	.arrow img{
 		width:70%;
+		max-height: 69px;
+		max-width: 144px;
+		float:right;
 	}
-	.left{
-		top:100px;
-		left:120px;
+	@media (max-width:720px){
+		.arrow{
+			display:none;
+		}
 	}
+	
