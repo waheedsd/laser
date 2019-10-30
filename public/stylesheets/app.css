@@ -149,13 +149,13 @@ input[type=text]{
   /* ===========wip============= */
   .right{
 	 	position: absolute;
-		top: -7px;
+		top: -17px;
 		right:0px;
   }
   .left{
 	  position: absolute;
 	  left:0px;
-	  top:-7px;
+	  top:-17px;
   }
   .heading{
 	padding:0px 7px !important;
@@ -175,6 +175,22 @@ input[type=text]{
 	  background-color: #92007f;
 	  color:#fff;
   }
+  .npi{
+	  background-color: blue;
+	  color:#fff;
+  }
+  .assembly{
+	background-color: #008080;
+	color:#fff;
+  }
+  .assemblyGl{
+	background-color: #0000ff;
+	color:#fff;
+  }
+  .assemblyHl{
+	background-color: #50b9a4;
+	color:#fff;
+  }
   .wip-section{
 	  margin:25px 0px;
 	  position: relative;
@@ -191,6 +207,18 @@ input[type=text]{
   table .stStep td{
 	color:#92007f;
 }
+	table .npiStep td{
+		color:#0000ff;	
+	}
+	table .assemblyStep td{
+		color:#008080;	
+	}
+	table .assemblyGlStep td{
+		color:#0000ff;	
+	}
+	table .assemblyHlStep td{
+		color:#50b9a4;	
+	}
   	table .wip td p li{
 	border:none;
 	font-size:12px !important;
@@ -203,6 +231,7 @@ input[type=text]{
 		color:rgb(0, 6, 8) !important;
 		padding:3px;
 		height:50px;
+		width:100vw;
 	}
 	table .smTable td{
 	  border:1px solid #008000;
@@ -210,20 +239,43 @@ input[type=text]{
 	}
 	table .fabTable td{
 		border:1px solid #FF0000;
-		background-color: #a7dcd9;
+		background-color: #5bbeb7;
 	}
 	table .stTable td{
 		border:1px solid #92007f;
-		background-color: #a7dcd9;
+		background-color: #5dd2b5;
+	}
+	table .npiTable td{
+		background-color: #87ceeb;
+		border:1px solid #0000ff;
+	}
+	table .assemblyTable td{
+		background-color: #79f4d4;
+		border:1px solid #008080;
+	}
+	table .assemblyGlTable td{
+		background-color: #5aacca;
+		border:1px solid #0000ff;
+	}
+	table .assemblyHlTable td{
+		background-color: #50b9a4;
+		border:1px solid #000;
 	}
 	.arrow{
 		position: absolute;
+		top:-44px;
 	}
 	.arrow img{
 		width:70%;
 		max-height: 69px;
 		max-width: 144px;
 		float:right;
+	}
+	.mt-10{
+		margin-top:10px !important;
+	}
+	.arrow-right img{
+		float:left;
 	}
 	@media (max-width:720px){
 		.arrow{
